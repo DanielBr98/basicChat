@@ -1,0 +1,50 @@
+html, #container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#top{
+    position: fixed;
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    background-color: skyblue;
+    height: 100px;
+    margin-top: 0;
+}
+
+#chat {
+    width: 500px;
+    height: 400px;
+    overflow-y: auto;
+    margin-top: 10%;
+}
+
+#selfUser, #anotherUser{
+    border-radius: 6px;
+    padding: 6px;
+    width: 60%;
+    margin: 6px;
+}
+
+#selfUser{
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    float: right;
+}
+
+#anotherUser{
+    color: white;
+    background-color: blue;
+    border: 1px solid blue;
+    float: left;
+}
+
+#field {
+    position: relative;
+}
