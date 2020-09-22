@@ -49,7 +49,7 @@ if (isset($form)) {
             break;
 
         default:
-            header('Location: index.php');
+            header('Location: ../index.php');
     }
 } elseif (isset($page) || @$page == '') {
 
@@ -60,5 +60,5 @@ if (isset($form)) {
         include($pagina . '.php');
     }
 } else {
-    header('Location: index.php');
+    header('Location: ../index.php');
 }
