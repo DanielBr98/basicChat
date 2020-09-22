@@ -1,0 +1,38 @@
+#page {
+    margin: 0 auto;
+    width: 55%;
+}
+
+#top {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#chat {
+    height: 350px;
+    overflow-y: auto;
+}
+
+#selfUser,
+#anotherUser {
+    border-radius: 6px;
+    padding: 6px;
+    margin: 6px;
+}
+
+#selfUser {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+}
+
+#anotherUser {
+    color: white;
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+#alert {
+    text-align: center;
+    color: red;
+}
