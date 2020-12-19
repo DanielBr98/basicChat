@@ -21,7 +21,7 @@ $(document).ready(function () {
 
             user = $(this).val()
             message = $(".message").val()
-            $.post('restrict/controller.php', {
+            $.post('controller/controller.php', {
                 type: 1,
                 user: user,
                 message: message,
@@ -44,7 +44,7 @@ $(document).ready(function () {
     })
 
     function getChat() {
-        $.post("restrict/controller.php", {
+        $.post("controller/controller.php", {
             type: 2,
             form: "form"
         }, function (resposta, resp) {
