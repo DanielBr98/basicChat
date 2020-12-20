@@ -19,7 +19,10 @@ $arrayUser = Model::user($_SESSION['user']);
 <hr>
 <div id="alert"></div>
 <div id="page">
-    <textarea rows="3" cols="70" class="message form-control" placeholder="message" value=""></textarea><br>
-    <button type="submit" class="newMessage btn btn-primary float-right" value="<?= $_SESSION['user'] ?>">Submit</button>
+    <form>
+        <input type="hidden" id="user" value="<?= $_SESSION['user'] ?>">
+        <textarea rows="3" cols="70" id="message" class="form-control" placeholder="message"></textarea><br>
+        <button type="button" id="submit" class="btn btn-primary float-right">Submit</button>
+    </form>
 </div>
 <br><br>

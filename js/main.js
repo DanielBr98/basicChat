@@ -3,24 +3,25 @@ $(document).ready(function () {
     $(document).keypress(function (e) {
         if (e.which == 13) {
 
-            if ($.trim($(".message").val()) == '') {
+            if ($.trim($("#message").val()) == '') {
 
                 $("#alert").show()
                 $("#alert").html("<span>This field must be filled</span>")
-                $(".message").css("border-color", "red")
+                $("#message").css("border-color", "red")
 
             } else {
 
-                $(".newMessage").click()
+                $("#submit").click()
             }
         }
     })
 
-    $(".newMessage").click(function () {
-        if ($.trim($(".message").val()) != '') {
+    $('#submit').click(function () {
 
-            user = $(this).val()
-            message = $(".message").val()
+        if ($.trim($("#message").val()) != '') {
+
+            user = $('#user').val()
+            message = $("#message").val()
             $.post('controller/controller.php', {
                 type: 1,
                 user: user,
@@ -29,8 +30,8 @@ $(document).ready(function () {
             }, function (data) {
                 if (data == 1) {
                     $("#alert").hide()
-                    $(".message").css("border-color", "black")
-                    $(".message").val("")
+                    $("#message").css("border-color", "black")
+                    $("#message").val("")
                     getChat()
                 }
             })
@@ -39,7 +40,7 @@ $(document).ready(function () {
 
             $("#alert").show()
             $("#alert").html("<span>This field must be filled</span>")
-            $(".message").css("border-color", "red")
+            $("#message").css("border-color", "red")
         }
     })
 
