@@ -19,9 +19,10 @@ $arrayUser = Model::user($_SESSION['user']);
 <hr>
 <div id="alert"></div>
 <div id="page">
+    <div class="loading"></div>
     <form>
         <input type="hidden" id="user" value="<?= $_SESSION['user'] ?>">
-        <textarea rows="3" cols="70" id="message" class="form-control" placeholder="message"></textarea><br>
+        <textarea rows="3" cols="70" id="message" class="form-control" placeholder="Type a message"></textarea><br>
         <button type="button" id="submit" class="btn btn-primary float-right">Submit</button>
     </form>
 </div>
