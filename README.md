@@ -1,7 +1,7 @@
 <h1 align="center">
     Basic Chat
 </h1>
-<p align="center">💬 Basic Chat using PHP and jQuery.</p>
+<p align="center">💬 Basic Chat using PHP with jQuery.</p>
 
 <p align="center">
  <a href="#prerequisites">Prerequisites</a> • 
